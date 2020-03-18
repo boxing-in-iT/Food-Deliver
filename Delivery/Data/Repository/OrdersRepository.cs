@@ -27,13 +27,13 @@ namespace Delivery.Data.Repository
 
             var items = deliveryCart.listDeliveryItems;
 
-            foreach(var el in items)
+            foreach (var el in items)
             {
                 var orderDetail = new OrderDetail()
                 {
-                    productId =el.product.id,
-                    orderId=order.id,
-                    price=el.product.price
+                    productId = el.product.id,
+                    orderId = order.id,
+                    price = el.product.price
                 };
                 appDBContent.OrderDetail.Add(orderDetail);
             }

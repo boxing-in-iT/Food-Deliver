@@ -22,6 +22,6 @@ namespace Delivery.Data.Repository
         public IEnumerable<Product> getFavProducts => appDBContent.product.Where(p => p.isFavorite).Include(c => c.Category);
 
         public Product getObjectProduct(int productId) => appDBContent.product.FirstOrDefault(p => p.id == productId);
-        
+
     }
 }
