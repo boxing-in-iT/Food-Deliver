@@ -54,9 +54,9 @@ namespace Delivery.Controllers
                     currCategory = "Напої";
                 }
 
-                
 
-              
+
+
             }
             var productObject = new ProductsListViewModel
             {
@@ -65,7 +65,7 @@ namespace Delivery.Controllers
             };
 
             ViewBag.Title = "Page with products";
-           
+
             return View(productObject);
         }
     }

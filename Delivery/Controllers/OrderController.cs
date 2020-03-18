@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Delivery.Controllers
 {
-    public class OrderController:Controller
+    public class OrderController : Controller
     {
         private readonly IAllOrders allOrders;
         private readonly DeliveryCart deliveryCart;
-        
+
         public OrderController(IAllOrders allOrders, DeliveryCart deliveryCart)
         {
             this.allOrders = allOrders;

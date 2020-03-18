@@ -1,13 +1,13 @@
 ﻿@model DeliveryCartViewModel
 
 <div class="container">
-    @foreach(var el in Model.deliveryCart.listDeliveryItems)
+    @foreach (var el in Model.deliveryCart.listDeliveryItems)
     {
         <div class="alert alert-warning mt-3">
-            <b>Товар: </b>@el.product.name<br/>
+            <b>Товар: </b>@el.product.name<br />
             <b>Ціна: </b>@el.product.price.ToString("c")
         </div>
     }
-    <hr/>
+    <hr />
     <a class="btn btn-danger" asp-controller="Order" asp-action="Checkout">Розрахуватись</a>
 </div>

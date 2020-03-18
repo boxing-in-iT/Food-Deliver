@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Delivery.Controllers
 {
-    public class DeliverCartController:Controller
+    public class DeliverCartController : Controller
     {
         private readonly IAllProducts _productRep;
         private readonly DeliveryCart _deliveryCart;
@@ -35,9 +35,9 @@ namespace Delivery.Controllers
 
         public RedirectToActionResult addToCart(int id)
         {
-            var item = _productRep.getProducts.FirstOrDefault(i=>i.id==id);
+            var item = _productRep.getProducts.FirstOrDefault(i => i.id == id);
 
-            if(item!=null)
+            if (item != null)
             {
                 _deliveryCart.AddToCart(item);
             }

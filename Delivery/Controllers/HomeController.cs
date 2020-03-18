@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Delivery.Controllers
 {
-    public class HomeController:Controller
+    public class HomeController : Controller
     {
         private readonly IAllProducts _productRep;
 
@@ -21,7 +21,7 @@ namespace Delivery.Controllers
         {
             var homeproducts = new HomeViewModel
             {
-                favProducts=_productRep.getFavProducts
+                favProducts = _productRep.getFavProducts
             };
 
             return View(homeproducts);
