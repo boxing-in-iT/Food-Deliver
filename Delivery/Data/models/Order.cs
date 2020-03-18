@@ -12,17 +12,17 @@ namespace Delivery.Data.models
         [BindNever]
         public int id { get; set; }
 
-        [Display (Name ="Введіть ім*я")]
+        [Display(Name = "Введіть ім*я")]
         [StringLength(50, MinimumLength = 2)]
         [Required(ErrorMessage = "Довжина ім`я не менше ніж 5 символів")]
         public string name { get; set; }
-        
+
 
         [Display(Name = "Введіть фамілію")]
         [StringLength(50, MinimumLength = 2)]
         [Required(ErrorMessage = "Довжина фамілії не менше ніж 2 символів")]
         public string surname { get; set; }
-        
+
 
         [Display(Name = "Введіть адресу")]
         [StringLength(75, MinimumLength = 10)]

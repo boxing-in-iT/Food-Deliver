@@ -33,10 +33,11 @@ namespace Delivery.Data.models
 
         public void AddToCart(Product product)
         {
-            appDBContent.deliveryCartItem.Add(new DeliveryCartItem {
-                CartId=DeliverCartId,
-                product=product,
-                price=product.price
+            appDBContent.deliveryCartItem.Add(new DeliveryCartItem
+            {
+                CartId = DeliverCartId,
+                product = product,
+                price = product.price
             });
             appDBContent.SaveChanges();
         }
